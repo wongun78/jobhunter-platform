@@ -95,7 +95,8 @@ const UserResume = (props: any) => {
 };
 
 const UserUpdateInfo = (props: any) => {
-    return <div>//todo</div>;
+    // TODO: Implement user update information form
+    return <div>Coming soon...</div>;
 };
 
 const JobByEmail = (props: any) => {

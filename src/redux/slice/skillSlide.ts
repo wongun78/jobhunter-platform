@@ -35,25 +35,18 @@ const initialState: IState = {
 export const skillSlide = createSlice({
     name: "skill",
     initialState,
-    // The `reducers` field lets us define reducers and generate associated actions
     reducers: {
-        // Use the PayloadAction type to declare the contents of `action.payload`
         setActiveMenu: (state, action) => {
-            // state.activeMenu = action.payload;
+            // Reserved for future use
         },
     },
     extraReducers: builder => {
-        // Add reducers for additional action types here, and handle loading state as needed
         builder.addCase(fetchSkill.pending, (state, action) => {
             state.isFetching = true;
-            // Add user to the state array
-            // state.courseOrder = action.payload;
         });
 
         builder.addCase(fetchSkill.rejected, (state, action) => {
             state.isFetching = false;
-            // Add user to the state array
-            // state.courseOrder = action.payload;
         });
 
         builder.addCase(fetchSkill.fulfilled, (state, action) => {
@@ -62,9 +55,6 @@ export const skillSlide = createSlice({
                 state.meta = action.payload.data.meta;
                 state.result = action.payload.data.result;
             }
-            // Add user to the state array
-
-            // state.courseOrder = action.payload;
         });
     },
 });
