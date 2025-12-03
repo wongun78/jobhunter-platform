@@ -247,7 +247,7 @@ const LayoutAdmin = () => {
                         <Outlet />
                     </Content>
                     {/* <Footer style={{ padding: 10, textAlign: 'center' }}>
-                        React Typescript series Nest.JS &copy; Hỏi Dân IT - Made with <HeartTwoTone />
+                        Job Hunter Platform &copy; {new Date().getFullYear()} - Made with <HeartTwoTone />
                     </Footer> */}
                 </Layout>
             </Layout>
